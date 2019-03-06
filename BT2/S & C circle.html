@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>diện tích và bán kính hình tròn</title>
+</head>
+<body>
+C:<input type="text" id="input" placeholder="Nhập đường kính" onchange="Ccircle()"/> <input type="button" value="chu vi là:" onclick="Ccircle()"/> <span id="result"></span> <br/>
+//////////////////////////////////<br/>
+S:<input type="text" id="tron" placeholder="Nhập bán kính" onchange="Scircle()"/> <input type="button" value="Diện tích là:" onclick="Scircle"/> <span id="rebuilt"></span>
+<script>
+////////////////Ccircle///////////////////////////////
+    function C(number){
+        let result = number * 3.14;
+        return result;
+    }
+    function Ccircle(){
+        let input = parseInt(document.getElementById("input").value);
+        let result = C(input);
+        document.getElementById("result").innerText = ""+ result;
+    }
+//////////////////Scircle///////////////////////////////
+
+    function S(number){
+        let rebuilt = (number * number) * 3.14;
+        return rebuilt;
+    }
+    function Scircle(){
+        let tron = parseInt(document.getElementById("tron").value);
+        let rebuilt = S(tron);
+        document.getElementById("rebuilt").innerText = ""+ rebuilt;
+    }
+</script>
+</body>
+</html>
