@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3 số nguyên</title>
+</head>
+<body>
+
+<script>
+    let x = parseInt(prompt("nhập số thứ nhất"));
+    let y = parseInt(prompt("nhập số thứ hai"));
+    let z = parseInt(prompt("nhập số thứ ba"));
+
+    if ((x > y) && (x > z) && (y > z)) {
+        document.write("số bé nhất là:" + z);
+    } else if ((x < y) && (y > z) && (x < z)) {
+        document.write(("số bé nhất là: " + x))
+    } else if ((x > y) && (y < z)) {
+        document.write(("số bé nhất là: " + y))
+    } else {
+
+    }
+
+
+</script>
+</body>
+</html>
